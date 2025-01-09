@@ -11,6 +11,6 @@ jobs:
             - name: Hola Mundo
               run: echo "Hola Mundo"
             - name: Instalar figlet
-              run: sudo apt-get install install figlet
+              run: sudo apt-get install figlet
             - name: Usar figlet
               run: figlet "Hola mundo"
