@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       
       - name: Install nmap
         run: sudo apt-get update && sudo apt-get install -y nmap
@@ -18,7 +18,7 @@ jobs:
         run: sudo nmap -sS -p 22,80,443 nike.com -oN nmap_report.txt
 
       - name: Upload scan report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: nmap-scan-cron
           path: nmap_report.txt

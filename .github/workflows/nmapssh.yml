@@ -11,4 +11,7 @@ jobs:
             - name: Descargar sshpass
               run: sudo apt-get update && sudo apt-get install sshpass -y
             - name: Usar sshpass
-              run: sshpass -p ${{ secrets.PASSWORD }} ssh -o StrictHostKeyChecking=no ${{ secrets.USER }}@${{ secrets.IP }} "echo 'Conexión exitosa'"
+              run: |
+                sshpass -p ${{ secrets.PASSWORD }} ssh -o StrictHostKeyChecking=no ${{ secrets.USER }}@${{ secrets.IP }} "
+                echo 'Conexión exitosa' &&
+                echo 'Bryan Zaragoza'' > hola_mundo.txt"
