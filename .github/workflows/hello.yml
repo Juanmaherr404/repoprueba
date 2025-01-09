@@ -2,8 +2,8 @@ name: Hola Mundo
 
 on: 
   push:
-        branches:
-            - master
+      branches:
+          - master
 jobs:
     hola:
         runs-on: ubuntu-latest
