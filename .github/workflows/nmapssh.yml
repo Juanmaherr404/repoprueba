@@ -1,0 +1,12 @@
+name: Nmap Manual
+
+on: 
+  push:
+      branches:
+          - master
+jobs:
+    hola:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Usar ssh
+              run: ssh -v
