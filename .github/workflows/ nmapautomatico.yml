@@ -1,5 +1,4 @@
-name: Nmap Manual
-
+name: Nmap Automático
 on: 
   push:
       branches:
