@@ -9,6 +9,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Descargar sshpass
-              run: sudo apt-get update && sudo APt-get install sshpass -y
+              run: sudo apt-get update && sudo apt-get install sshpass -y
             - name: Usar sshpass
               run: sshpass -p ${{ secrets.PASSWORD }} ssh -o StrictHostKeyChecking=no ${{ secrets.USER }}@${{ secrets.IP }} "echo 'Conexión exitosa'"
